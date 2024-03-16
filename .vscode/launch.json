@@ -1,0 +1,105 @@
+{
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+
+    {
+      "name": "Front end|Run Server",
+      "type": "chrome",
+      "request": "launch",
+      "preLaunchTask": "npm: start",
+      "url": "http://localhost:4200/",
+    },
+    {
+      "name": "Front end|Run Test",
+      "type": "chrome",
+      "request": "launch",
+      "preLaunchTask": "npm: test", 
+      "url": "http://localhost:9876/debug.html"
+    },
+    {
+      "name": "Auth Service",
+      "type": "node",
+      "request": "launch",
+      "program": "index.js",
+      "stopOnEntry": false,
+      "cwd": "${workspaceFolder}/server/services/auth",
+      "runtimeExecutable": null,
+      "runtimeArgs": [
+        "--nolazy"
+      ]
+    },
+    {
+      "name":"Communicate Service",
+      "type":"node",
+      "request":"launch",
+      "program":"index.js",
+      "stopOnEntry":false,
+      "cwd":"${workspaceFolder}/server/services/communicate",
+      "runtimeExecutable":null,
+      "runtimeArgs":[
+        "--nolazy"
+      ]
+    },
+    {
+      "name":"Config Service",
+      "type":"node",
+      "request":"launch",
+      "program":"index.js",
+      "stopOnEntry":false,
+      "cwd":"${workspaceFolder}/server/services/config",
+      "runtimeExecutable":null,
+      "runtimeArgs":[
+        "--nolazy"
+      ]
+    },
+    {
+      "name":"Messages Service",
+      "type":"node",
+      "request":"launch",
+      "program":"index.js",
+      "stopOnEntry":false,
+      "cwd":"${workspaceFolder}/server/services/messages",
+      "runtimeExecutable":null,
+      "runtimeArgs":[
+        "--nolazy"
+      ]
+    },
+    {
+      "name":"Notify Service",
+      "type":"node",
+      "request":"launch",
+      "program":"index.js",
+      "stopOnEntry":false,
+      "cwd":"${workspaceFolder}/server/services/notify",
+      "runtimeExecutable":null,
+      "runtimeArgs":[
+        "--nolazy"
+      ]
+    },
+    {
+      "name":"Tweets Service",
+      "type":"node",
+      "request":"launch",
+      "program":"index.js",
+      "stopOnEntry":false,
+      "cwd":"${workspaceFolder}/server/services/tweets",
+      "runtimeExecutable":null,
+      "runtimeArgs":[
+        "--nolazy"
+      ]
+    },
+    {
+      "name":"Visit Service",
+      "type":"node",
+      "request":"launch",
+      "program":"index.js",
+      "stopOnEntry":false,
+      "cwd":"${workspaceFolder}/server/services/visit",
+      "runtimeExecutable":null,
+      "runtimeArgs":[
+        "--nolazy"
+      ]
+    }
+  ]
+}
