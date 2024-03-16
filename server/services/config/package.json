@@ -1,7 +1,7 @@
 {
-  "name": "tweets",
+  "name": "config",
   "version": "1.0.0",
-  "description": "Service to manage tweets for opentweet app",
+  "description": "Configuration service for opentweet app",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
